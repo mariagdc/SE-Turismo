@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Python: Uvicorn",
+            "type": "python",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "app:app",
+                "--reload"
+            ],
+            "console": "integratedTerminal",
+            "env": {
+                "PIPENV_ACTIVE": "1"
+            },
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
