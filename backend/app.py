@@ -26,9 +26,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-class Response(str, Enum):
-    YES = "Sí"
-    NO = "No"
+""" class Response(str, Enum):
+    YES = True
+    NO = False """
 
 # Modelos de Pydantic para los datos
 class FilenameRequest(BaseModel):
@@ -54,7 +54,7 @@ async def post_current_question(request: UserResponse):
         raise HTTPException(status_code=400, detail="La consulta no ha sido iniciada. Llame primero a /consultar/iniciar.")
  
     # Configura la respuesta del usuario en el motor
-    engine.set_response(Response.YES if request.response else Response.NO)
+    engine.set_response(request.response)
     return siguiente_pregunta()
 
 # Función auxiliar para obtener la siguiente pregunta o el resultado final

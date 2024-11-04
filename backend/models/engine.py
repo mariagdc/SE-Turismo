@@ -38,7 +38,7 @@ class Engine:
         self.base = BaseConocimientos()
         self.accepted_properties: List[Property] = []
         self.denied_properties: List[Property] = []
-        self.response: Response = Response.NO
+        self.response: Response = False
         self.result: Entry or None = None
 
     def start(self) -> Entry or None:
@@ -65,7 +65,7 @@ class Engine:
                     continue
 
                 response = _get_user_response(prop)
-                if response == Response.YES:
+                if response == True:
                     self.accepted_properties.append(prop)
                 else:
                     self.denied_properties.append(prop)
@@ -104,7 +104,7 @@ class Engine:
 
                 yield prop
 
-                if self.response == Response.YES:
+                if self.response == True:   #Response.YES
                     self.accepted_properties.append(prop)
                 else:
                     self.denied_properties.append(prop)
