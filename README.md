@@ -17,10 +17,6 @@ pipenv install fastapi pydantic uvicorn
 ## Iniciar el entorno y corriendo la aplicación
 
 Ubicarse dentro del proyecto, es decir app.py debe quedar estar en el directorio de trabajo
-```
-sitema_experto\sistema_experto>
-```
-
 ```csharp
 python -m venv .env
 pipenv shell
