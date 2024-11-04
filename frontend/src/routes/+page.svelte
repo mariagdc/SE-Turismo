@@ -46,7 +46,7 @@
 				question = data.pregunta;
 			} else {
 				question = null;
-				resultado = 'Conversación finalizada. ' + data.resultado;
+				resultado = data;
 			}
 		} catch (error) {
 			error = 'Error al iniciar la conversación.';
@@ -88,7 +88,15 @@
 					</div>
 				{:else if resultado}
 					<div>
-						<h4 class="subtitle is-4">{resultado}</h4>
+						<h4 class="subtitle is-4">Conversación finalizada. {resultado.resultado}</h4>
+						<p>{resultado.descripcion}</p>
+						{#if resultado.propiedades.length}
+							 
+						<p>Esto se sugirió porque:</p>
+						{/if}
+						{#each resultado.propiedades as prop}
+						<p>{prop}</p>
+						{/each}
 						<button class="button" on:click={restart}>Reiniciar</button>
 					</div>
 				{/if}
