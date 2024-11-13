@@ -2,39 +2,35 @@
   "__v": 1,
   "description": "Base de conocimiento Sistema Experto Turismo",
   "entries": [
-    
-  {
-    "name": "Experiencia Full Fueguina ",
-    "description": "Se sugieren Parque Nacional con Trekking y Canoas, Noche Austral Ushuaia Excursiones, Excursión Parque Nacional con Tren del Fin del Mundo con guia - Excursión Navegacion Canal de Beagle Lobos, Pajaros y Faro Les Eclaireurs, City Tour en Helicoptero, Estancia Harberton y Caminata con Pinguinos. En gastronomia se sugieren El Viejo Marino, Küar resto.bar, El Mercado Ushuaia, o Taberna del Viejo Lobo",
-    "props": [
-      "Es Turista",
-      "Viaja solo",
-      "Primera vez visitando la provincia",
-      "Se queda mas de 3 dias",
-      "Le interesa lo cultural",
-      "Le interesa la Aventura",
-      "Le gusta la gastronomia",
-      "Le interesa la naturaleza"
-    ]
-  },
     {
-      "name": "Paquete Cultural",
+      "name": "Experiencia Full Fueguina ",
+      "description": "Se sugieren Parque Nacional con Trekking y Canoas, Noche Austral Ushuaia Excursiones, Excursión Parque Nacional con Tren del Fin del Mundo con guia - Excursión Navegacion Canal de Beagle Lobos, Pajaros y Faro Les Eclaireurs, City Tour en Helicoptero, Estancia Harberton y Caminata con Pinguinos. En gastronomia se sugieren El Viejo Marino, Küar resto.bar, El Mercado Ushuaia, o Taberna del Viejo Lobo",
+      "props": [
+        "Es Turista",
+        "Viaja solo",
+        "Primera vez visitando la provincia",
+        "Se queda mas de 3 dias",
+        "Le interesa lo cultural",
+        "Le interesa la Aventura",
+        "Le gusta la gastronomia",
+        "Le interesa la naturaleza"
+      ]
+    },
+    {
+      "name": "Tierra del Fuego: Pasado y Presente",
       "description": "Se sugiere pase Ushuaia City Tour, Museo Marítimo y del Presidio de Ushuaia, Museo del Fin del Mundo, Museo Pensar Malvinas",
       "props": [
         "Es Turista",
-      "Viaja solo",
-      "Primera vez visitando la provincia",
-      "Se queda mas de 3 dias",
-      "Le interesa lo cultural",
-      "Le interesa la Aventura",
-      "Le gusta la gastronomia"
-
-
-        
+        "Viaja solo",
+        "Primera vez visitando la provincia",
+        "Se queda mas de 3 dias",
+        "Le interesa lo cultural",
+        "Le interesa la Aventura",
+        "Le gusta la gastronomia"
       ]
-    }, 
+    },
     {
-      "name": "Paquete Clasico",
+      "name": "Me como el fin del Mundo",
       "description": "- Se sugiere: Ushuaia City Tour, Excursión Parque Nacional con Tren del Fin del Mundo con guia Excursión Navegación Canal de Beagle (Lobos, Pájaros, Faro Les Eclaireurs) - Excursion Estancia Harberton y Caminata con Pinguinos -(terrestre). ",
       "props": [
         "Es Turista",
@@ -43,9 +39,8 @@
         "Se queda mas de 3 dias",
         "Le interesa lo cultural",
         "Le interesa la Aventura"
-        
       ]
-    }, 
+    },
     {
       "name": "Paquete Combinado",
       "description": "- Se sugiere: Ushuaia City Tour, Excursión Parque Nacional con Tren del Fin del Mundo con guia Excursión Navegación Canal de Beagle (Lobos, Pájaros, Faro Les Eclaireurs) - Excursion Estancia Harberton y Caminata con Pinguinos -(terrestre). ",
@@ -56,9 +51,9 @@
         "Se queda mas de 3 dias",
         "Le interesa lo cultural"
       ]
-    }, 
+    },
     {
-      "name": "Paquete Aventura",
+      "name": "Desafio Austral",
       "description": "Se sugiere como excursion Travesia Off Road Lagos 4x4 - Aventura Glaciar Vinciguerra - Trekking Laguna Esmeralda, para conocer más la ciudad tambien se recomienda en gastronomia: El Almacen de Ramos Generales, El mercado Ushuaia, Taberna del Viejo Lobo",
       "props": [
         "Es Turista",
@@ -66,62 +61,122 @@
         "Primera vez visitando la provincia",
         "Se queda mas de 3 dias"
       ]
-    },  
+    },
     {
       "name": "Circuito Base",
-      "description": " Se sugiere Excursión Parque Nacional con Tren del Fin del Mundo con guia y Excursión Navegacion Canal de Beagle Faro Lobos, Pajaros y Faro Les Eclaireurs. Además te invitamos al Almacen de Ramos Generales para una experiencia gastronómica  ",
+      "description": " Se sugiere Excursión Parque Nacional con Tren del Fin del Mundo con guia y Excursión Navegacion Canal de Beagle Faro Lobos, Pajaros y Faro Les Eclaireurs. Además te invitamos que recorras la avenida San Martin para tener una experiencia gastronómica inolvidable  ",
       "props": [
         "Es Turista",
         "Viaja solo",
         "Primera vez visitando la provincia"
-        
       ]
     },
     {
-      "name": "Paquete Alternativo",
-      "description": "Visita a una cervecería artesanal, Buceo en el Canal Beagle, Cabalgata por la Estancia Harberton",
+      "name": "Rincones ocultos: Ushuaia",
+      "description": "Como ya hiciste una visita antes, podrías recorrer una cervecería artesanal, bucear en el canal de Beagle, y explorar rincones que no conocías",
       "props": [
         "Es Turista",
         "Viaja solo"
-      
-      
+      ]
+    },
+    {
+      "name": "Ushuaia Kids: Naturaleza y diversión",
+      "description": "Te invitamos a participar con toda la familia a la escuela de Esquí para que se diviertan en la nieve en el Glaciar Martial. Dato de contacto info@escuelaushuaia.com Ahí mismo podés degustar delicias en La Cabaña, casa de té. La podés encontrar en redes sociales como 'casadeteushuaia'.Pueden dar un paseo por la Reserva Natural Bahia encerrada, y recorrer el Parque Nacional en el tren.",
+    "props": [
+        "Es Turista",
+        "Su grupo tiene 4 integrantes o más",
+        "Tiene niños menores de 12 años",
+        "Es receso invernal",
+        "Se queda mas de 3 dias"
+      ]
+    },
+    {
+      "name": "Exploración fugaz",
+      "description": "- Se sugiere:una caminata por la ciudad, una visita al Glaciar Martial, e imperdible la Excursión Navegación Canal de Beagle (Lobos, Pájaros, Faro Les Eclaireurs) ",
+      "props": [
+        "Es Turista",
+        "Su grupo tiene 4 integrantes o más",
+        "Tiene niños menores de 12 años",
+        "Es receso invernal"
+      ]
+    },
+    {
+      "name": "Descubriendo en familia",
+      "description": "En el caso de tener movilidad propia te sugerimos que recorras los alrededores, incluso podrías darte una escapada a la ciudad de Rio Grande y ser testigo de los fuertes vientos, visitar la playa, recorrer los monumentos a los soldados y caidos en Malvinas. Podés visitar puntos panoramicos a lo largo de la ruta 3, y un recorrido personalizado al Parque Nacional Tierra del Fuego. ",
+      "props": [
+        "Es Turista",
+        "Su grupo tiene 4 integrantes o más",
+        "Tiene niños menores de 12 años",
+        "Tiene movilidad propia"
+      ]
+    },
+    {
+      "name": "Locales",
+      "description": "Recorre la ciudad utilizando los medios de transporte urbanos, llegá a todos tus puntos de interéssólo tenés que contar con una tarjeta SUBE y para guiarte mejor podrías utilizar la aplicación moovit.Todos tus puntos de interés están a tu alcance.",
+      "props": [
+        "Es Turista",
+        "Su grupo tiene 4 integrantes o más",
+        "Tiene niños menores de 12 años"
+      ]
+    },
+    {
+      "name": "Exploración Beagle",
+      "description": "Si querés que tus adolescentes queden maravillados, un infaltable es el paseo en catamarán por el canal de Beagle.A la noche podés sumar un pase por la calle principal, y una visita obligada al Hard Rock café, seguro les va a encantar. ",
+      "props": [
+        "Es Turista",
+        "Su grupo tiene 4 integrantes o más",
+        "Son adolescentes"
+      ]
+    },
+    {
+      "name": "Mood Aventura",
+      "description": "En el caso que tengas planes hechos, podés sumar estas opciones, una excursión a Cabo San Pablo, para conocer la Desdemona.El Acatushun Museum  Se encuentra dentro de la estancia Haberton, lo mantiene una fundación integrada por biólogos, y profesionales estudiosos de la fauna marina.",
+      "props": [
+        "Es Turista",
+        "Su grupo tiene 4 integrantes o más"
+      ]
+    },
+    {
+      "name": "Escapada Romántica en el Fin del Mundo",
+      "description": "Recorrido fotográfico y cata de vinos en la ciudad de Ushuaia, también pueden recorrer la ciudad y tener citas con vistas increibles como en los restaurantes de los hoteles, Arakur(podés pagarte el día de spa para usar todas las instalaciones), otra opcion es el Hotel Los Cauquenes, cenas con entreteniemientos, y shows. Hacer actividades como senderos canopy,  ¡Van a volver más enamorados que nunca! ",
+      "props": [
+        "es Turista",
+        "Estas con tu pareja"
+      ]
+    },
+    {
+      "name": "Aventureros",
+      "description": "Recorré el Cerro Alarken, o el Cerro Alvear, también podés sumar el Sendero Hito XXIV para conocer más sobre estas actividades podés entrar a https://www.tripadvisor.com.ar/Attraction_Review-g312855-d10003562-Reviews-Hito_XXIV-Ushuaia_Province_of_Tierra_del_Fuego_Patagonia.html",
+      "props": [
+        "es Turista"
       ]
     },
     {
       "name": "Circuito Familiar",
       "description": "Lo invitamos a revisar la agenda cultural de la ciudad en el siguiente link https://turismoushuaia.com/contenidos/agenda-cultural/ y se sugiere la siguiente excursion Sunset Kayaking Ushuaia un paseo apto a todos los públicos y edades",
       "props": [
-        "Visita Familia"
-        
+        "Visita Familia"  
+         
       ]
     },
     {
-      "name": "Paquete Una vuelta",
+      "name": "Una vuelta más",
       "description": "- Se sugiere: Ushuaia City Tour, Excursión Parque Nacional con Tren del Fin del Mundo con guia Excursión Navegación Canal de Beagle (Lobos, Pájaros, Faro Les Eclaireurs) - Excursion Estancia Harberton y Caminata con Pinguinos -(terrestre). ",
       "props": [
-        
         "Se queda mas de 3 dias"
       ]
-    }, 
+    },
     {
-      "name": "Conociendo con la familia",
+      "name": "Exploradores del Fin del Mundo",
       "description": "Lo invitamos a revisar la agenda cultural de la ciudad en el siguiente link https://turismoushuaia.com/contenidos/agenda-cultural/ y se sugiere la siguiente excursion Sunset Kayaking Ushuaia un paseo apto a todos los públicos y edades",
       "props": [
         "es Turista"
-        
       ]
     },
     {
       "name": "Circuito: Conozco a mi manera",
       "description": "- Se sugiere:una caminata por la ciudad, imperdible la Excursión Navegación Canal de Beagle (Lobos, Pájaros, Faro Les Eclaireurs) ",
-      "props": [
-         
-      ]
+      "props": []
     }
-       
-    
-    
-    
-    
-   ]
+  ]
 }
