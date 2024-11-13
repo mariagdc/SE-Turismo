@@ -166,16 +166,29 @@
         "Se queda mas de 3 dias"
       ]
     },
+    
     {
-      "name": "Exploradores del Fin del Mundo",
-      "description": "Lo invitamos a revisar la agenda cultural de la ciudad en el siguiente link https://turismoushuaia.com/contenidos/agenda-cultural/ y se sugiere la siguiente excursion Sunset Kayaking Ushuaia un paseo apto a todos los públicos y edades",
+      "name": "Bureau de Eventos",
+      "description": "¿Sabías que tenemos un Bureau de Eventos? Enmarcado en la ofensiva de posicionar a Ushuaia como sede de eventos, el Ushuaia Bureau invita a los OPC a visitar el destino y vivir la experiencia que el Fin del Mundo puede ofrecer ",
       "props": [
-        "es Turista"
+        "Esta en la ciudad por negocios",
+        "Planea hacer un evento"
       ]
     },
+    
     {
-      "name": "Circuito: Conozco a mi manera",
-      "description": "- Se sugiere:una caminata por la ciudad, imperdible la Excursión Navegación Canal de Beagle (Lobos, Pájaros, Faro Les Eclaireurs) ",
+      "name": "Conozco a mi manera",
+      "description": "Se sugiere:una caminata por la ciudad, imperdible la Excursión Navegación Canal de Beagle (Lobos, Pájaros, Faro Les Eclaireurs) ",
+      "props": [
+        "Esta en la ciudad por negocios"
+        
+      ]
+    },
+  
+    
+    {
+      "name": "Conozco a mi manera",
+      "description": "Se sugiere:una caminata por la ciudad, imperdible la Excursión Navegación Canal de Beagle (Lobos, Pájaros, Faro Les Eclaireurs) ",
       "props": []
     }
   ]
