@@ -67,7 +67,7 @@ def siguiente_pregunta():
             resultado = engine.get_result()
             if resultado:
                 return {
-                    "resultado": f"Encontramos una actividad recomendada para vos: {resultado.name}",
+                    "resultado": f"Encontramos las actividades que mejor se ajustan para vos: {resultado.name}",
                     "descripcion": resultado.description,
                     "propiedades": [prop.name for prop in resultado.properties]
                 }

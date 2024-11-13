@@ -1,4 +1,53 @@
 <script>
+	import { Carousel, Card, Button, Badge } from 'flowbite-svelte';
+	export const images = [
+		{
+			alt: 'Cosmic timetraveler',
+			src: '/img_ushuaia/DSC_2034.JPG',
+			title: 'cosmic-timetraveler-pYyOZ8q7AII-unsplash.com'
+		},
+		{
+			alt: 'Cristina Gottardi',
+			src: '/img_ushuaia/DSC_2226.JPG',
+			title: 'cristina-gottardi-CSpjU6hYo_0-unsplash.com'
+		},
+		{
+			alt: 'Johannes Plenio',
+			src: '/img_ushuaia/DSC_5937.jpg',
+			title: 'johannes-plenio-RwHv7LgeC7s-unsplash.com'
+		},
+		{
+			alt: 'Jonatan Pie',
+			src: '/img_ushuaia/DSC_7947.JPG',
+			title: 'jonatan-pie-3l3RwQdHRHg-unsplash.com'
+		},
+		{
+			alt: 'Mark Harpur',
+			src: '/img_ushuaia/1.jpg',
+			title: 'mark-harpur-K2s_YE031CA-unsplash'
+		},
+		{
+			alt: 'Pietro De Grandi',
+			src: '/img_ushuaia/2.JPG',
+			title: 'pietro-de-grandi-T7K4aEPoGGk-unsplash'
+		},
+		{
+			alt: 'Sergey Pesterev',
+			src: '/img_ushuaia/3.JPG',
+			title: 'sergey-pesterev-tMvuB9se2uQ-unsplash'
+		},
+		{
+			alt: 'Solo travel goals',
+			src: '/img_ushuaia/4.JPG',
+			title: 'solotravelgoals-7kLufxYoqWk-unsplash'
+		},
+		{
+			alt: 'Solo travel goals',
+			src: '/img_ushuaia/5.JPG',
+			title: 'solotravelgoals-7kLufxYoqWk-unsplash'
+		}
+	];
+
 	let conversationStarted = false;
 	let loading = false;
 	let error = false;
@@ -59,52 +108,111 @@
 		userResponse = response;
 		fetchNextQuestion();
 	};
+
+	const scaleAnimation = (x) => scale(x, { duration: 500, easing: quintOut });
 </script>
 
-<div class="fixed-grid has-3-cols">
-	<div class="grid">
-		<div class="cell is-col-start-2">
-			<h1 class="title">Chatbot de Sistema Experto</h1>
-			<div class="field is-grouped">
-				<!-- <div class="control">
-                  <button class="button is-link">Submit</button>
-                </div>
-                <div class="control">
-                  <button class="button is-link is-light">Cancel</button>
-                </div> -->
-				{#if !conversationStarted}
-					<div class="control">
-						<button class="button" on:click={startConversation}>Iniciar Conversación</button>
-					</div>
-				{:else if loading}
-					<p>Cargando...</p>
-				{:else if error}
-					<p style={{ color: 'red' }}>{error}</p>
-				{:else if question}
-					<div>
-						<h4 class="subtitle is-4">{question}</h4>
-						<button class="button" on:click={handleUserResponse(true)}>Sí</button>
-						<button class="button" on:click={handleUserResponse(false)}>No</button>
-					</div>
-				{:else if resultado}
-					<div>
-						<h4 class="subtitle is-4">Conversación finalizada. {resultado.resultado}</h4>
-						<p>{resultado.descripcion}</p>
-						{#if resultado.propiedades.length}
-							 
-						<p>Esto se sugirió porque:</p>
-						{/if}
+<div class="carouselContainer">
+	<Carousel {images} transition={scaleAnimation} duration="3000"></Carousel>
+</div>
+<div class="innerContainer">
+	<Card class="containerCard" size="md">
+		<h5 class="cardTitle mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+			Chatbot Sistema Experto-Turismo
+		</h5>
+		<div class="cardContent">
+			{#if !conversationStarted}
+				<div>
+					<Button on:click={startConversation} class="w-fit">Iniciar Conversación</Button>
+				</div>
+			{:else if loading}
+				<p>Cargando...</p>
+			{:else if error}
+				<p style={{ color: 'red' }}>{error}</p>
+			{:else if question}
+				<h4 class="cardText mb-3 font-normal leading-tight text-gray-700 dark:text-gray-400">
+					{question}
+				</h4>
+				<div class="cardButtons">
+					<Button on:click={handleUserResponse(true)}>Sí</Button>
+					<Button on:click={handleUserResponse(false)}>No</Button>
+				</div>
+			{:else if resultado}
+					<h4 class="subtitle is-4">Conversación finalizada. {resultado.resultado}</h4>
+					<p class="mb-3 font-normal leading-tight text-gray-700 dark:text-gray-400">
+						{resultado.descripcion}
+					</p>
+					{#if resultado.propiedades.length}
+						<p class="mb-3 font-normal leading-tight text-gray-700 dark:text-gray-400">
+							Esto se sugirió porque:
+						</p>
+					{/if}
+					<div class="resultTags">
 						{#each resultado.propiedades as prop}
-						<p>{prop}</p>
+						<Badge>{prop}</Badge>
+						<!-- <p class="mb-3 font-normal leading-tight text-gray-700 dark:text-gray-400">{prop}</p> -->
 						{/each}
-						<button class="button" on:click={restart}>Reiniciar</button>
 					</div>
-				{/if}
-			</div>
+					<div class="cardButtons">
+					<Button on:click={restart} class="w-fit">Reiniciar</Button>
 		</div>
-	</div>
+			{/if}
+		</div>
+	</Card>
 </div>
 
 <style>
-	@import 'https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css';
+	/* .container {
+		position: fixed;
+		height: 100vh;
+		width: 100vw;
+		margin: 0;
+		display: flex;
+		flex-grow: 1;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+	} */
+
+	.carouselContainer {
+		position: fixed;
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.cardText {
+		align-self: center;
+	}
+
+	.cardButtons {
+		align-self: center;
+	}
+
+	.cardContent {
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		align-content: space-around;
+		justify-content: space-around;
+	}
+
+	.cardTitle {
+		align-self: center;
+	}
+
+	.resultTags{
+		padding-bottom: 15px;
+	}
+
+	.innerContainer {
+		position: relative;
+		flex-direction: row;
+		z-index: 9999;
+		align-content: flex-start;
+		justify-content: center;
+		display: flex;
+		flex-grow: 1;
+	}
 </style>

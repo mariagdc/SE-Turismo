@@ -1,0 +1,25 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.carouselContainer > div {
+    height: 100%;
+    width: 100%;
+}
+
+.carouselContainer > div > div {
+    height: 100%;
+    width: 100%;
+}
+
+.containerCard {
+    margin-top: 2%;
+    align-self: flex-start;
+    flex-basis: 300px;
+    flex-shrink: 0;
+    min-height: 200px;
+    min-width: 50vw;
+    width: 50vw;
+    background-color: rgba(255,255,255,0.9);
+    color: black;
+}
