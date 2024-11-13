@@ -151,12 +151,13 @@
         "es Turista"
       ]
     },
+    
     {
       "name": "Circuito Familiar",
       "description": "Lo invitamos a revisar la agenda cultural de la ciudad en el siguiente link https://turismoushuaia.com/contenidos/agenda-cultural/ y se sugiere la siguiente excursion Sunset Kayaking Ushuaia un paseo apto a todos los públicos y edades",
       "props": [
         "Visita Familia"  
-         
+        
       ]
     },
     {
@@ -175,9 +176,8 @@
         "Planea hacer un evento"
       ]
     },
-    
     {
-      "name": "Conozco a mi manera",
+      "name": "Conozco particular",
       "description": "Se sugiere:una caminata por la ciudad, imperdible la Excursión Navegación Canal de Beagle (Lobos, Pájaros, Faro Les Eclaireurs) ",
       "props": [
         "Esta en la ciudad por negocios"
