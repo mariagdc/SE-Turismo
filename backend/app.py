@@ -12,7 +12,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 
 # Cargar el archivo JSON para el árbol de decisiones
-fichero=".\\datas\\sistema_experto.json"
+fichero="C:\\Users\\Flor\\Desktop\\Proyecto SE Turismo\\se_turismo\\backend\\datas\\sistema_experto.json"
 
 engine = Engine() 
 
