@@ -118,7 +118,7 @@
 <div class="innerContainer">
 	<Card class="containerCard" size="md">
 		<h5 class="cardTitle mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-			Chatbot Sistema Experto-Turismo
+			Sistema Experto Recomendaciones Turísticas
 		</h5>
 		<div class="cardContent">
 			{#if !conversationStarted}
